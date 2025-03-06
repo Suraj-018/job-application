@@ -1,12 +1,11 @@
-package com.example.job.Service;
+package com.example.job.job.service;
 
-import com.example.job.Repository.JobRepository;
+import com.example.job.job.repository.JobRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-import com.example.job.entity.Job;
-import org.springframework.transaction.annotation.Transactional;
+import com.example.job.job.entity.Job;
 
 @Service
 public class JobServiceImpl implements JobService{

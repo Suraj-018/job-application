@@ -1,7 +1,7 @@
-package com.example.job.Controller;
+package com.example.job.job.controller;
 
-import com.example.job.entity.Job;
-import com.example.job.Service.JobService;
+import com.example.job.job.entity.Job;
+import com.example.job.job.service.JobService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/jobs")
 public class JobController {
-    private JobService jobService;
+    private final JobService jobService;
 
     public JobController(JobService jobService) {
         this.jobService = jobService;

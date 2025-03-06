@@ -1,6 +1,7 @@
-package com.example.job.Service;
+package com.example.job.job.service;
 
-import com.example.job.entity.Job;
+import com.example.job.job.entity.Job;
+
 import java.util.List;
 
 public interface JobService {
