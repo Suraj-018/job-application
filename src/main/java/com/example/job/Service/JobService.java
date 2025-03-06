@@ -1,6 +1,6 @@
 package com.example.job.Service;
 
-import com.example.job.Entity.Job;
+import com.example.job.entity.Job;
 import java.util.List;
 
 public interface JobService {
@@ -9,7 +9,7 @@ public interface JobService {
 
     void createJob(Job job);
 
-    Job findJobById(int id);
+    Job findJobById(Long id);
 
     boolean updateJobById(Long id, Job updatedJob);
 

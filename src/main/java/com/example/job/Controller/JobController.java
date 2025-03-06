@@ -1,6 +1,6 @@
 package com.example.job.Controller;
 
-import com.example.job.Entity.Job;
+import com.example.job.entity.Job;
 import com.example.job.Service.JobService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class JobController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Job> findJobById(@PathVariable int id){
+    public ResponseEntity<Job> findJobById(@PathVariable Long id){
         Job job = jobService.findJobById(id);
         if(job!=null)
             return new ResponseEntity<>(job, HttpStatus.OK);
